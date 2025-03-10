@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="buscar">Buscar</button>
+        <script>
+      
+            const botao = document.getElementById('buscar');
+          
+            
+            botao.addEventListener('click', () => {
+             
+              window.location.href = 'listar.html';
+            });
+          </script>
+    </header>
+
+    <main>
+        <div id="formulario" >
+            <input id="placa" type="text" placeholder="Placa">
+            <input id="modelo" type="text" placeholder="Modelo">
+            <input id="infoCarro" type="text" placeholder="Informações do carro">
+            <input id="dono" type="text" placeholder="Dono">
+        </div>
+
+        <button id="cadastrar">Cadastrar</button>
+        
+    </main>
+    <script src="./cadastro.js"></script>
+</body>
+</html>

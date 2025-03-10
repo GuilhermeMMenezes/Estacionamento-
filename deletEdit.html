@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar/Editar Veículo</title>
+    <link rel="stylesheet" href="deletEdit.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button id="buscar">Buscar</button>
+        <button id="cadastrar">Cadastrar</button>
+    </nav>
+</header>
+
+<main>
+    <div id="pesquisaPlaca">
+        <h2 style="color: red;">ATENÇÃO! O veículo será excluído</h2>
+        <input id="placaBusca" type="text" placeholder="Digite a placa">
+        <button id="deletar">Excluir</button>
+    </div>
+
+    <div id="formulario2">
+        <h2>Editar veículo</h2>
+        <input id="placaBusca2" type="text" placeholder="Digite a placa atual">
+        <input id="placaNova" type="text" placeholder="Digite a nova placa">
+        <button id="editar">Editar</button>
+    </div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("buscar").addEventListener("click", () => {
+        window.location.href = "listar.html";
+    });
+
+    document.getElementById("cadastrar").addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+});
+</script>
+
+<script src="./deletEdit.js"></script>
+
+</body>
+</html>

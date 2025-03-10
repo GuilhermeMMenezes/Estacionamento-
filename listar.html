@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Veículos</title>
+    <link rel="stylesheet" href="listar.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button id="cadastrar">Cadastrar</button>
+        <button id="deletar">Deletar/Editar</button>
+    </nav>
+</header>
+
+<main id="main-listar">
+    <div id="pesquisaPlaca">
+        <input id="placaBusca" type="text" placeholder="Digite a placa">
+        <button id="buscar">Buscar</button>
+    </div>
+    <div id="resultado"></div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("cadastrar").addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+
+    document.getElementById("deletar").addEventListener("click", () => {
+        window.location.href = "deletar.html";
+    });
+});
+</script>
+
+<script src="listar.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Veículo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <button id="cadastrar">Cadastrar:</button>
+    <button id="deletar">Deletar/Editar:</button>
+<script>
+const botao = document.getElementById('cadastrar');
+const botao2 = document.getElementById('deletar');
+
+
+botao.addEventListener('click', () => {
+ 
+  window.location.href = 'index.html';
+});
+botao2.addEventListener('click', () => {
+ 
+ window.location.href = 'deletar.html';
+});
+</script>
+
+  </header>
+
+  <main id="main-listar">
+    <div id="pesquisaPlaca">
+    <input id="placaBusca" type="text" placeholder="Digite a placa">
+  <button id="buscar">Buscar</button>
+</div>
+ 
+  <div id="resultado"></div>
+  
+</main>
+
+  <script src="listar.js"></script>
+</body>
+
+</html> -->
